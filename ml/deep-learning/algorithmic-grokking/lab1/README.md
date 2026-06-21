@@ -33,19 +33,19 @@ From inside the development container:
 
 ```bash
 cd /workspace/modeling-lab
-uv run python ml/algorithmic_grokking/lab1/train.py
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py
 ```
 
 For a faster smoke run:
 
 ```bash
-uv run python ml/algorithmic_grokking/lab1/train.py --steps 500 --eval-every 100
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py --steps 500 --eval-every 100
 ```
 
 For a more serious run:
 
 ```bash
-uv run python ml/algorithmic_grokking/lab1/train.py \
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py \
   --p 97 \
   --train-fraction 0.3 \
   --steps 20000 \
@@ -57,13 +57,13 @@ uv run python ml/algorithmic_grokking/lab1/train.py \
 To save structured metrics for plotting:
 
 ```bash
-uv run python ml/algorithmic_grokking/lab1/train.py \
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py \
   --p 31 \
   --train-fraction 0.3 \
   --steps 20000 \
   --eval-every 1000 \
   --weight-decay 0.5 \
-  --metrics-csv ml/algorithmic_grokking/lab1/runs/example.csv
+  --metrics-csv ml/deep-learning/algorithmic-grokking/lab1/runs/example.csv
 ```
 
 ## Suggested Experiments
@@ -71,17 +71,17 @@ uv run python ml/algorithmic_grokking/lab1/train.py \
 Start with these sweeps:
 
 ```bash
-uv run python ml/algorithmic_grokking/lab1/train.py --weight-decay 0.0
-uv run python ml/algorithmic_grokking/lab1/train.py --weight-decay 0.1
-uv run python ml/algorithmic_grokking/lab1/train.py --weight-decay 1.0
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py --weight-decay 0.0
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py --weight-decay 0.1
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py --weight-decay 1.0
 ```
 
 Then vary data scarcity:
 
 ```bash
-uv run python ml/algorithmic_grokking/lab1/train.py --train-fraction 0.2
-uv run python ml/algorithmic_grokking/lab1/train.py --train-fraction 0.5
-uv run python ml/algorithmic_grokking/lab1/train.py --train-fraction 0.8
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py --train-fraction 0.2
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py --train-fraction 0.5
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py --train-fraction 0.8
 ```
 
 ## What To Look For

@@ -14,7 +14,7 @@ Date: 2026-06-21
 Fixed setup:
 
 ```bash
-uv run python ml/algorithmic_grokking/lab1/train.py \
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py \
   --p 31 \
   --train-fraction 0.3 \
   --steps 3000 \
@@ -49,7 +49,7 @@ Interpretation: with only 30% of all pairs seen during training, the model learn
 Fixed setup:
 
 ```bash
-uv run python ml/algorithmic_grokking/lab1/train.py \
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py \
   --p 31 \
   --steps 3000 \
   --eval-every 300 \
@@ -100,7 +100,7 @@ train_margin,test_margin,param_norm,embedding_norm,top_embedding_frequencies
 Fixed setup:
 
 ```bash
-uv run python ml/algorithmic_grokking/lab1/train.py \
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py \
   --p 31 \
   --train-fraction 0.3 \
   --steps 20000 \
@@ -134,7 +134,7 @@ This motivated a longer run at `weight_decay=0.5`.
 Command:
 
 ```bash
-uv run python ml/algorithmic_grokking/lab1/train.py \
+uv run python ml/deep-learning/algorithmic-grokking/lab1/train.py \
   --p 31 \
   --train-fraction 0.3 \
   --steps 100000 \
@@ -145,7 +145,7 @@ uv run python ml/algorithmic_grokking/lab1/train.py \
   --layers 2 \
   --weight-decay 0.5 \
   --seed 1 \
-  --metrics-csv ml/algorithmic_grokking/lab1/runs/very_long_wd_0.5_p31.csv
+  --metrics-csv ml/deep-learning/algorithmic-grokking/lab1/runs/very_long_wd_0.5_p31.csv
 ```
 
 Key trace:
