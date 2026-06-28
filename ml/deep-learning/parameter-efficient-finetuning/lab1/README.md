@@ -11,6 +11,18 @@ Target model:
 - Apache-2.0 license
 - Suitable for LoRA-style PEFT experiments
 
+Local model metadata is mirrored in:
+
+```text
+model-info/qwen3.5-2b-base/
+```
+
+The full checkpoint weights are intentionally not committed to this repository. See:
+
+```text
+model-info/qwen3.5-2b-base/WEIGHTS.md
+```
+
 Local hardware target:
 
 - NVIDIA GeForce RTX 5070 Ti
